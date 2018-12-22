@@ -11,7 +11,7 @@ struct node
 struct node* root=NULL;
 
 
-/*function prototypre*/
+/*function prototype*/
 void addatbegin(int data);
 void display(void);
 int Length (void);
@@ -24,8 +24,8 @@ int main(int argc, char* argv[])
 	addatbegin(12);
 	addatbegin(13);
 	addatbegin(14);
-	//insert(15,6);
-	//insert(15,5);
+	insert(15,6);
+	insert(15,5);
 	display();
 	int len=Length();
 	printf("\nlength=%d\n",len);
