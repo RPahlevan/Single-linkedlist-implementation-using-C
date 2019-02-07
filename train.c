@@ -11,7 +11,7 @@ struct node
 struct node* root=NULL;
 
 
-/*function prototypre*/
+/*function prototype*/
 void addatbegin(int data);
 void display(void);
 int Length (void);
