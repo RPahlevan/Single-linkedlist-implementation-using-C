@@ -127,11 +127,13 @@ void delete(int location)
 	}
 
 	struct node *temp,*p;
-	temp=(struct node*)malloc(sizeof(struct node));
 	temp=root;
-	int count=1;
-	
-	while(count<location-1)
+	int count=0;
+	if(location==1)
+	{
+		root=temp->Next;
+	}else{
+	while(count<location-2)
 	{
 		temp=temp->next;
 		count++;
@@ -141,6 +143,7 @@ void delete(int location)
 	temp->next=p->next;
 	p->next=NULL;
 	free(p);
+	}
 }
 /*inserafter nth location*/
 void insert(int input_data, int location)
